@@ -1,42 +1,5 @@
-get-purple(s = false)
-  if s == 50
-    rgba(#f3e5f5)
-  else if s == 100
-    rgba(#e1bee7)
-  else if s == 200
-    rgba(#ce93d8)
-  else if s == 300
-    rgba(#ba68c8)
-  else if s == 400
-    rgba(#ab47bc)
-  else if s == 500
-    rgba(#9c27b0)
-  else if s == 600
-    rgba(#8e24aa)
-  else if s == 700
-    rgba(#7b1fa2)
-  else if s == 800
-    rgba(#6a1b9a)
-  else if s == 900
-    rgba(#4a148c)
-  else if s == 1000
-    rgba(#ea80fc)
-  else if s == 1100
-    rgba(#e040fb)
-  else if s == 1200
-    rgba(#d500f9)
-  else if s == 1300
-    rgba(#aa00ff)
-  else 
-    rgba(#9c27b0)
-bg-purple(s = false)
-  background-color:get-purple(s)
-text-purple(s = false)
-  color:get-purple(s)
-  &:hover
-    color:get-purple(s)
-border-purple(s = false)
-  border-color:get-purple(s)
+@import "./purple-func.styl";
+
 .bg-purple
   bg-purple()
   .bg-minus-1,

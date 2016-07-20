@@ -1,42 +1,5 @@
-get-pink(s = false)
-  if s == 50
-    rgba(#fce4ec)
-  else if s == 100
-    rgba(#f8bbd0)
-  else if s == 200
-    rgba(#f48fb1)
-  else if s == 300
-    rgba(#f06292)
-  else if s == 400
-    rgba(#ec407a)
-  else if s == 500
-    rgba(#e91e63)
-  else if s == 600
-    rgba(#d81b60)
-  else if s == 700
-    rgba(#c2185b)
-  else if s == 800
-    rgba(#ad1457)
-  else if s == 900
-    rgba(#880e4f)
-  else if s == 1000
-    rgba(#ff80ab)
-  else if s == 1100
-    rgba(#ff4081)
-  else if s == 1200
-    rgba(#f50057)
-  else if s == 1300
-    rgba(#c51162)
-  else 
-    rgba(#e91e63)
-bg-pink(s = false)
-  background-color:get-pink(s)
-text-pink(s = false)
-  color:get-pink(s)
-  &:hover
-    color:get-pink(s)
-border-pink(s = false)
-  border-color:get-pink(s)
+@import "./pink-func.styl";
+
 .bg-pink
   bg-pink()
   .bg-minus-1,

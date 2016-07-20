@@ -1,57 +1,4 @@
-$screen-xs-min =      481px;
-$screen-phone =       $screen-xs-min;
-
-$screen-sm-min =      768px;
-$screen-tablet =      $screen-sm-min;
-
-$screen-md-min =      992px;
-$screen-desktop =     $screen-md-min;
-
-$screen-lg-min =      1200px;
-$screen-lg-desktop =  $screen-lg-min;
-
-$screen-xs-max =      ($screen-sm-min - 1)
-$screen-sm-max =      ($screen-md-min - 1)
-$screen-md-max =      ($screen-lg-min - 1)
-
-$auto-widths-iterations = 12
-$percent-widths-iterations = 100
-$unit-widths-iterations = 12
-$gutter = 15
-
-auto-widths(nums)
-  for i in 1..nums
-    > *:first-child:nth-last-child({i}),
-    > *:first-child:nth-last-child({i}) ~ *
-      $percent = 100/i
-      width: $percent+"%"
-
-percent-widths(nums)
-  for i in 1..nums
-    .w-{i}
-      $percent = i
-      width: $percent+"%"
-
-unit-widths(nums)
-  for i in 1..nums
-    .ws-{i}
-      $percent = 100*i/$unit-widths-iterations
-      width: $percent+"%"
-
-crow()
-  text-align: center
-  font-size: 0
-  &:before
-    content: ''
-    display: inline-block
-    height: 100%
-    vertical-align: middle
-  > *
-    vertical-align: middle
-    display: inline-block
-    font-size: medium /* IE */
-    font-size: initial
-    text-align: left
+@import "./crow-func.styl";
     
 .crow
   padding: 0 ($gutter * 1px)
@@ -86,25 +33,6 @@ crow()
   > .crow
     margin: 0 (- $gutter * 1px)
     padding: 0
-
-destroy-all()
-  .crow
-    > *
-      display: block
-      width: auto
-    &:before 
-      content: ''
-      display: none
-destroy-crow()
-  &.crow,
-  &.crow.fly
-    height: auto
-    > *
-      display: block
-      width: 100%
-    &:before
-      content: ''
-      display: none
 
 // Desktop only styles (desktops, 1200px and up) 
 @media (min-width: $screen-lg-min)

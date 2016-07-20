@@ -1,0 +1,39 @@
+get-blue(s = false)
+  if s == 50
+    rgba(#e7e9fd)
+  else if s == 100
+    rgba(#d0d9ff)
+  else if s == 200
+    rgba(#afbfff)
+  else if s == 300
+    rgba(#91a7ff)
+  else if s == 400
+    rgba(#738ffe)
+  else if s == 500
+    rgba(#5677fc)
+  else if s == 600
+    rgba(#4e6cef)
+  else if s == 700
+    rgba(#455ede)
+  else if s == 800
+    rgba(#3b50ce)
+  else if s == 900
+    rgba(#2a36b1)
+  else if s == 1000
+    rgba(#a6baff)
+  else if s == 1100
+    rgba(#6889ff)
+  else if s == 1200
+    rgba(#4d73ff)
+  else if s == 1300
+    rgba(#4d69ff)
+  else 
+    rgba(#5677fc)
+bg-blue(s = false)
+  background-color:get-blue(s)
+text-blue(s = false)
+  color:get-blue(s)
+  &:hover
+    color:get-blue(s)
+border-blue(s = false)
+  border-color:get-blue(s)

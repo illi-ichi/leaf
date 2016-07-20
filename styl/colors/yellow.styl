@@ -1,42 +1,5 @@
-get-yellow(s = false)
-  if s == 50
-    rgba(#fffde7)
-  else if s == 100
-    rgba(#fff9c4)
-  else if s == 200
-    rgba(#fff59d)
-  else if s == 300
-    rgba(#fff176)
-  else if s == 400
-    rgba(#ffee58)
-  else if s == 500
-    rgba(#ffeb3b)
-  else if s == 600
-    rgba(#fdd835)
-  else if s == 700
-    rgba(#fbc02d)
-  else if s == 800
-    rgba(#f9a825)
-  else if s == 900
-    rgba(#f57f17)
-  else if s == 1000
-    rgba(#ffff8d)
-  else if s == 1100
-    rgba(#ffff00)
-  else if s == 1200
-    rgba(#ffea00)
-  else if s == 1300
-    rgba(#ffd600)
-  else 
-    rgba(#ffeb3b)
-bg-yellow(s = false)
-  background-color:get-yellow(s)
-text-yellow(s = false)
-  color:get-yellow(s)
-  &:hover
-    color:get-yellow(s)
-border-yellow(s = false)
-  border-color:get-yellow(s)
+@import "./yellow-func.styl";
+
 .bg-yellow
   bg-yellow()
   .bg-minus-1,

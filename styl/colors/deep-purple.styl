@@ -1,42 +1,5 @@
-get-deep-purple(s = false)
-  if s == 50
-    rgba(#ede7f6)
-  else if s == 100
-    rgba(#d1c4e9)
-  else if s == 200
-    rgba(#b39ddb)
-  else if s == 300
-    rgba(#9575cd)
-  else if s == 400
-    rgba(#7e57c2)
-  else if s == 500
-    rgba(#673ab7)
-  else if s == 600
-    rgba(#5e35b1)
-  else if s == 700
-    rgba(#512da8)
-  else if s == 800
-    rgba(#4527a0)
-  else if s == 900
-    rgba(#311b92)
-  else if s == 1000
-    rgba(#b388ff)
-  else if s == 1100
-    rgba(#7c4dff)
-  else if s == 1200
-    rgba(#651fff)
-  else if s == 1300
-    rgba(#6200ea)
-  else 
-    rgba(#673ab7)
-bg-deep-purple(s = false)
-  background-color:get-deep-purple(s)
-text-deep-purple(s = false)
-  color:get-deep-purple(s)
-  &:hover
-    color:get-deep-purple(s)
-border-deep-purple(s = false)
-  border-color:get-deep-purple(s)
+@import "./deep-purple-func.styl";
+
 .bg-deep-purple
   bg-deep-purple()
   .bg-minus-1,

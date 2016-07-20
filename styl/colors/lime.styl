@@ -1,42 +1,5 @@
-get-lime(s = false)
-  if s == 50
-    rgba(#f9fbe7)
-  else if s == 100
-    rgba(#f0f4c3)
-  else if s == 200
-    rgba(#e6ee9c)
-  else if s == 300
-    rgba(#dce775)
-  else if s == 400
-    rgba(#d4e157)
-  else if s == 500
-    rgba(#cddc39)
-  else if s == 600
-    rgba(#c0ca33)
-  else if s == 700
-    rgba(#afb42b)
-  else if s == 800
-    rgba(#9e9d24)
-  else if s == 900
-    rgba(#827717)
-  else if s == 1000
-    rgba(#f4ff81)
-  else if s == 1100
-    rgba(#eeff41)
-  else if s == 1200
-    rgba(#c6ff00)
-  else if s == 1300
-    rgba(#aeea00)
-  else 
-    rgba(#cddc39)
-bg-lime(s = false)
-  background-color:get-lime(s)
-text-lime(s = false)
-  color:get-lime(s)
-  &:hover
-    color:get-lime(s)
-border-lime(s = false)
-  border-color:get-lime(s)
+@import "./lime-func.styl";
+
 .bg-lime
   bg-lime()
   .bg-minus-1,

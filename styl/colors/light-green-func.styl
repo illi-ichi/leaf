@@ -1,0 +1,39 @@
+get-light-green(s = false)
+  if s == 50
+    rgba(#f1f8e9)
+  else if s == 100
+    rgba(#dcedc8)
+  else if s == 200
+    rgba(#c5e1a5)
+  else if s == 300
+    rgba(#aed581)
+  else if s == 400
+    rgba(#9ccc65)
+  else if s == 500
+    rgba(#8bc34a)
+  else if s == 600
+    rgba(#7cb342)
+  else if s == 700
+    rgba(#689f38)
+  else if s == 800
+    rgba(#558b2f)
+  else if s == 900
+    rgba(#33691e)
+  else if s == 1000
+    rgba(#ccff90)
+  else if s == 1100
+    rgba(#b2ff59)
+  else if s == 1200
+    rgba(#76ff03)
+  else if s == 1300
+    rgba(#64dd17)
+  else 
+    rgba(#8bc34a)
+bg-light-green(s = false)
+  background-color:get-light-green(s)
+text-light-green(s = false)
+  color:get-light-green(s)
+  &:hover
+    color:get-light-green(s)
+border-light-green(s = false)
+  border-color:get-light-green(s)

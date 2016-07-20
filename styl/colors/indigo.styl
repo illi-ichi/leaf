@@ -1,42 +1,5 @@
-get-indigo(s = false)
-  if s == 50
-    rgba(#e8eaf6)
-  else if s == 100
-    rgba(#c5cae9)
-  else if s == 200
-    rgba(#9fa8da)
-  else if s == 300
-    rgba(#7986cb)
-  else if s == 400
-    rgba(#5c6bc0)
-  else if s == 500
-    rgba(#3f51b5)
-  else if s == 600
-    rgba(#3949ab)
-  else if s == 700
-    rgba(#303f9f)
-  else if s == 800
-    rgba(#283593)
-  else if s == 900
-    rgba(#1a237e)
-  else if s == 1000
-    rgba(#8c9eff)
-  else if s == 1100
-    rgba(#536dfe)
-  else if s == 1200
-    rgba(#536dfe)
-  else if s == 1300
-    rgba(#304ffe)
-  else 
-    rgba(#3f51b5)
-bg-indigo(s = false)
-  background-color:get-indigo(s)
-text-indigo(s = false)
-  color:get-indigo(s)
-  &:hover
-    color:get-indigo(s)
-border-indigo(s = false)
-  border-color:get-indigo(s)
+@import "./indigo-func.styl";
+
 .bg-indigo
   bg-indigo()
   .bg-minus-1,

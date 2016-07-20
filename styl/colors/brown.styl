@@ -1,42 +1,5 @@
-get-brown(s = false)
-  if s == 50
-    rgba(#efebe9)
-  else if s == 100
-    rgba(#d7ccc8)
-  else if s == 200
-    rgba(#bcaaa4)
-  else if s == 300
-    rgba(#a1887f)
-  else if s == 400
-    rgba(#8d6e63)
-  else if s == 500
-    rgba(#795548)
-  else if s == 600
-    rgba(#6d4c41)
-  else if s == 700
-    rgba(#5d4037)
-  else if s == 800
-    rgba(#4e342e)
-  else if s == 900
-    rgba(#3e2723)
-  else if s == 1000
-    rgba(#d7ccc8)
-  else if s == 1100
-    rgba(#bcaaa4)
-  else if s == 1200
-    rgba(#a1887f)
-  else if s == 1300
-    rgba(#8d6e63)
-  else 
-    rgba(#795548)
-bg-brown(s = false)
-  background-color:get-brown(s)
-text-brown(s = false)
-  color:get-brown(s)
-  &:hover
-    color:get-brown(s)
-border-brown(s = false)
-  border-color:get-brown(s)
+@import "./brown-func.styl";
+
 .bg-brown
   bg-brown()
   .bg-minus-1,

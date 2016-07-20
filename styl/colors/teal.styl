@@ -1,42 +1,5 @@
-get-teal(s = false)
-  if s == 50
-    rgba(#e0f2f1)
-  else if s == 100
-    rgba(#b2dfdb)
-  else if s == 200
-    rgba(#80cbc4)
-  else if s == 300
-    rgba(#4db6ac)
-  else if s == 400
-    rgba(#26a69a)
-  else if s == 500
-    rgba(#009688)
-  else if s == 600
-    rgba(#00897b)
-  else if s == 700
-    rgba(#00796b)
-  else if s == 800
-    rgba(#00695c)
-  else if s == 900
-    rgba(#004d40)
-  else if s == 1000
-    rgba(#a7ffeb)
-  else if s == 1100
-    rgba(#64ffda)
-  else if s == 1200
-    rgba(#1de9b6)
-  else if s == 1300
-    rgba(#00bfa5)
-  else 
-    rgba(#009688)
-bg-teal(s = false)
-  background-color:get-teal(s)
-text-teal(s = false)
-  color:get-teal(s)
-  &:hover
-    color:get-teal(s)
-border-teal(s = false)
-  border-color:get-teal(s)
+@import "./teal-func.styl";
+
 .bg-teal
   bg-teal()
   .bg-minus-1,

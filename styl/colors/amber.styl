@@ -1,42 +1,4 @@
-get-amber(s = false)
-  if s == 50
-    rgba(#fff8e1)
-  else if s == 100
-    rgba(#ffecb3)
-  else if s == 200
-    rgba(#ffe082)
-  else if s == 300
-    rgba(#ffd54f)
-  else if s == 400
-    rgba(#ffca28)
-  else if s == 500
-    rgba(#ffc107)
-  else if s == 600
-    rgba(#ffb300)
-  else if s == 700
-    rgba(#ffa000)
-  else if s == 800
-    rgba(#ff8f00)
-  else if s == 900
-    rgba(#ff6f00)
-  else if s == 1000
-    rgba(#ffe57f)
-  else if s == 1100
-    rgba(#ffd740)
-  else if s == 1200
-    rgba(#ffc400)
-  else if s == 1300
-    rgba(#ffab00)
-  else 
-    rgba(#ffc107)
-bg-amber(s = false)
-  background-color:get-amber(s)
-text-amber(s = false)
-  color:get-amber(s)
-  &:hover
-    color:get-amber(s)
-border-amber(s = false)
-  border-color:get-amber(s)
+@import "./amber-func.styl";
 .bg-amber
   bg-amber()
   .bg-minus-1,
