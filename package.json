@@ -1,0 +1,22 @@
+{
+  "name": "leaf",
+  "version": "1.0.0",
+  "description": "Leaf CSS Framework based on Google's material design",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkortes/leaf.git"
+  },
+  "keywords": [
+    "materialdesign",
+    "css",
+    "framework"
+  ],
+  "author": "kkortes <kim@kortes.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kkortes/leaf/issues"
+  },
+  "homepage": "http://getleaf.com"
+}
